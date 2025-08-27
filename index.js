@@ -2,6 +2,7 @@ function calculateTip() {
   const bill = parseFloat(document.getElementById('billAmount').value);
   const selectedTip = document.getElementById('tipPercent').value;
   const customTip = parseFloat(document.getElementById('customTip').value);
+  const currency = document.getElementById('currency').value;
   const resultDiv = document.getElementById('result');
 
   if (isNaN(bill) || bill <= 0) {
@@ -11,7 +12,7 @@ function calculateTip() {
 
   let tipPercentage;
 
-  // Use custom tip if it's provided and valid
+  // Use custom tip if provided and valid
   if (!isNaN(customTip) && customTip > 0) {
     tipPercentage = customTip / 100;
   } else if (selectedTip) {
@@ -24,12 +25,14 @@ function calculateTip() {
   const tip = bill * tipPercentage;
   const total = bill + tip;
 
-  resultDiv.innerText = `Tip: $${tip.toFixed(2)}\nTotal: $${total.toFixed(2)}`;
+  resultDiv.innerText = 
+    `Tip: ${currency}${tip.toFixed(2)}\nTotal: ${currency}${total.toFixed(2)}`;
 }
 
 function clearForm() {
   document.getElementById('billAmount').value = '';
   document.getElementById('tipPercent').value = '';
   document.getElementById('customTip').value = '';
+  document.getElementById('currency').value = '$';
   document.getElementById('result').innerText = '';
 }

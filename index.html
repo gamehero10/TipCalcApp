@@ -11,8 +11,19 @@
   <div class="container">
     <h2>Tip Calculator</h2>
 
-    <label for="billAmount">Bill Amount ($)</label>
+    <label for="billAmount">Bill Amount</label>
     <input type="number" id="billAmount" placeholder="Enter bill amount" />
+
+    <label for="currency">Currency</label>
+    <select id="currency">
+      <option value="$" selected>Dollar ($)</option>
+      <option value="€">Euro (€)</option>
+      <option value="£">Pound (£)</option>
+      <option value="₹">Rupee (₹)</option>
+      <option value="¥">Yen (¥)</option>
+      <option value="₩">Won (₩)</option>
+      <option value="₪">Shekel (₪)</option>
+    </select>
 
     <label for="tipPercent">Tip Percentage</label>
     <select id="tipPercent">
@@ -35,6 +46,6 @@
     <div id="result"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
