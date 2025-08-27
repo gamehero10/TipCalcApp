@@ -27,11 +27,14 @@
     <label for="customTip">Or Enter Custom Tip (%)</label>
     <input type="number" id="customTip" placeholder="e.g. 12.5" />
 
-    <button onclick="calculateTip()">Calculate Tip</button>
+    <div class="button-group">
+      <button onclick="calculateTip()">Calculate Tip</button>
+      <button onclick="clearForm()" class="clear-btn">Clear</button>
+    </div>
 
     <div id="result"></div>
   </div>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

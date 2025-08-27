@@ -42,15 +42,30 @@ button {
   font-size: 16px;
 }
 
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 button {
   background-color: #28a745;
   color: white;
   border: none;
   cursor: pointer;
+  flex: 1;
 }
 
 button:hover {
   background-color: #218838;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+}
+
+.clear-btn:hover {
+  background-color: #c82333;
 }
 
 #result {

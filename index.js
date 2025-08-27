@@ -26,3 +26,10 @@ function calculateTip() {
 
   resultDiv.innerText = `Tip: $${tip.toFixed(2)}\nTotal: $${total.toFixed(2)}`;
 }
+
+function clearForm() {
+  document.getElementById('billAmount').value = '';
+  document.getElementById('tipPercent').value = '';
+  document.getElementById('customTip').value = '';
+  document.getElementById('result').innerText = '';
+}
