@@ -16,12 +16,16 @@
 
     <label for="tipPercent">Tip Percentage</label>
     <select id="tipPercent">
-      <option value="0.1">10%</option>
-      <option value="0.15">15%</option>
-      <option value="0.18">18%</option>
-      <option value="0.2">20%</option>
-      <option value="0.25">25%</option>
+      <option value="">-- Select Tip --</option>
+      <option value="10">10%</option>
+      <option value="15">15%</option>
+      <option value="18">18%</option>
+      <option value="20">20%</option>
+      <option value="25">25%</option>
     </select>
+
+    <label for="customTip">Or Enter Custom Tip (%)</label>
+    <input type="number" id="customTip" placeholder="e.g. 12.5" />
 
     <button onclick="calculateTip()">Calculate Tip</button>
 

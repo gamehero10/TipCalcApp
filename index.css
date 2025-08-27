@@ -58,4 +58,5 @@ button:hover {
   font-weight: bold;
   color: #333;
   text-align: center;
+  white-space: pre-line;
 }
